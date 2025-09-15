@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Well Soon ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff4b5c;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .heart {
+      color: red;
+      font-size: 3rem;
+      margin-top: 20px;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      max-width: 500px;
+    }
+    .actions { margin-top: 25px; }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg,#ff758c,#ff7eb3);
+      color: #fff;
+      padding: 12px 26px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: .5px;
+      box-shadow: 0 4px 14px rgba(255,118,150,0.4);
+      transition: transform .25s ease, box-shadow .25s ease, filter .25s;
+    }
+    .btn:hover { 
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255,118,150,0.5);
+      filter: brightness(1.05);
+    }
+    .btn:active { transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>🌸 Get Well Soon, Madam 🌸</h1>
+    <h2> Twarga Kolkondi! </h2>
+    <p>I hope you feel better soon.</p>
+    <div class="heart">❤️</div>
+    <div class="actions">
+      <a class="btn" href="more.html">Open A Little Note →</a>
+    </div>
+  </div>
+</body>
+</html>
